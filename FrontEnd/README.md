@@ -1,0 +1,1 @@
+Pasta destinada para as atividades avaliativas de FrontEnd.
