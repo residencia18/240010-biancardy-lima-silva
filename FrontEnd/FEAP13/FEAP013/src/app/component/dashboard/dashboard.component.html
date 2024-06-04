@@ -1,0 +1,16 @@
+<div class="dashboard">
+  <h2>Seus eventos</h2>
+  <div *ngIf="storeEvento.eventos().length > 0; else noEventsTemplate">
+      <ul>
+          <li *ngFor="let evento of storeEvento.eventos()">
+              <h3>{{ evento.nome }}</h3>
+              <p>{{ evento.data | date }}</p>
+              <p>{{ evento.local }}</p>
+          </li>
+      </ul>
+  </div>
+
+  <ng-template #noEventsTemplate>
+      <p>Você não possui eventos cadastrados.</p>
+  </ng-template>
+</div>

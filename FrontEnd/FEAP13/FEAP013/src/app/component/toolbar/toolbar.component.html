@@ -1,0 +1,29 @@
+<mat-toolbar>
+    <button [matMenuTriggerFor]="menu" mat-icon-button class="menu-button" aria-label="Botão menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>{{title}}</span>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="rotaDashboard()">
+          <mat-icon>dashboard</mat-icon>
+          <span>Dashboard</span>
+        </button>
+        <button mat-menu-item (click)="rotaEventos()">
+          <!-- <mat-icon>add_task</mat-icon> -->
+          <mat-icon>event</mat-icon>
+          <span>Eventos</span>
+        </button>
+        <button mat-menu-item (click)="sair()">
+          <mat-icon>exit_to_app</mat-icon>
+          <span>Sair</span>
+        </button>
+        <!-- <button mat-menu-item disabled>
+          <mat-icon>voicemail</mat-icon>
+          <span>Check voice mail</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>notifications_off</mat-icon>
+          <span>Disable alerts</span>
+        </button> -->
+    </mat-menu>
+</mat-toolbar>

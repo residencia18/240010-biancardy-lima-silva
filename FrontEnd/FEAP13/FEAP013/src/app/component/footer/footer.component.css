@@ -1,0 +1,43 @@
+div {
+    padding: 10px;
+    color: #ffffff; /* Branco */
+    background-color: #ff5722; /* Laranja */
+    height: 150px;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff; /* Branco */
+}
+
+.footer {
+    grid-row-start: 3;
+    color: #ffffff; /* Branco */
+    text-align: center;
+    padding-bottom: 20px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 116px;
+}
+
+@media (max-width: 500px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px 1fr 60px;
+    }
+
+    /* .footer {
+        color: #ffffff; 
+        text-align: center;
+        padding-bottom: 20px;
+        width: 100%;
+        position: fixed; 
+        bottom: 0; 
+        left: 0;
+        height: 116px;
+    } */
+}
